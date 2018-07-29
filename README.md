@@ -4,15 +4,11 @@ When a DJ blends two different songs, they are often not the same speed, which g
 
 The equation for this is simple cross multiplication.  In practice, the song that is currently playing is often known as the "Master" song as it's BPM will not be adjusted, and we will be assigning it the X variable.  The song that we want to play next and will be assigned the Y variable, and we will be changing it's speed to match the Master track.  We will solve for "N", which we will then convert to a percentage of the master track.  The equation looks like this:
 
-X   N
-- = -
-Y  100
+X / Y = N / 100
 
 If the master bpm is 140 and the next song is 146, we look like this:
 
-140   N
- -  = - 
-146  100
+140 / 146 = N / 100
 
 14,000 = 146N
 
