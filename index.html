@@ -1,0 +1,55 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+<title>Bpm Buddy</title>
+</head>
+<body ng-app="bpmEr">
+    <div class="container">
+        <div class="logoText">
+            bPM Buddy
+        </div>
+
+    </div>
+    <div ng-controller="bpmController" class="container">
+        <div class="col col-lg-12">
+            <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-6">
+                    <div class="content" id="track1">
+                        Track 1:
+                        <button ng-click="masterToggle1()" class="btn btn-default" id="masterButton1">Master?</button>
+                        <input type="text" ng-model="inputBpm1" placeholder="Type BPM Value Here!" />
+                        <input type="text" ng-model="bpmAdj1" placeholder="Result" />
+                    </div>
+                </div>
+
+                <div class="col col-lg-6 col-md-6 col-sm-6">
+                    <div class="content" id="track2">
+                        Track 2:
+                        <button ng-click="masterToggle2()" class="btn btn-default" id="masterButton2">Master?</button>
+                        <input type="text" ng-model="inputBpm2" placeholder="Type BPM Value Here!" />
+                        <input type="text" ng-model="bpmAdj2" placeholder="Result" />
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-12">
+              <button ng-click="goButton()" class="btn btn-default" id="goButton">Calculate!</button>
+
+              </div>
+                <!--Development Info-->
+              <!--you typed {{inputBpm1}} and {{inputBpm2}}-->
+            </div>
+        </div>
+    <div class="col col-lg-12 col-md-12 col-sm-12">
+        <p>
+            <span>Instructions:</span>
+            <span>1: Select which track is the "Master Track", meaning the track who's BPM you want to bring the other track to.</span>
+            <span>2: Input BPMs of both tracks.</span>
+            <span>3: Hit Calculate!</span>
+            <span>4: Adjust the pitch slider of the track that ISN'T the master track by the percentage shown, which will now cause both tracks to have the same BPM.</span>
+        </p>
+    </div>
+</body>
+</html>

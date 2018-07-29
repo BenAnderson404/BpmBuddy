@@ -1,0 +1,47 @@
+@font-face {
+    font-family: H74BBL;
+    src: url(fonts/H74BBL.ttf);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html{
+    box-sizing:border-box;
+}
+.logoText {
+    font-family: H74BBL;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 0 0 5px white;
+    text-shadow: 2px 2px #960ab3;
+}
+body {
+    background-color: #000000;
+    color: #3bc6e3;
+    /*text-shadow: 2px 2px #960ab3;*/
+}
+.row{
+    text-align:center;
+    width: 100%;
+    margin: auto;
+    /*border: 1px solid white;*/
+    display: flex;
+
+
+}
+p span{
+    display: block;
+    text-align:center;
+}
+.content{
+    /*border: 1px solid white;*/
+    text-align: left;
+
+}
+#masterButton1{
+    background-color:white;
+}
+#goButton{
+  text-align: center;
+  width: 100%;
+}

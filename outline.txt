@@ -1,0 +1,6 @@
+BPMER
+
+input track 1's bpm
+input track 2's bpm
+define master track
+result with slave track's needed bpm adjustment
